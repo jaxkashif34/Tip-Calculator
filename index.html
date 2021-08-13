@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./Files/TipCalc.css">
+    <!-- Main JS File -->
+    <script src="./Files/TipCalc.js" defer></script>
+    <title>Tip CalCulator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Tip Claculator</h1>
+        </div>
+        <div class="amount">
+            <h4>How Much was Your Bill</h4>
+            <span>$</span><input type="number" name="billamt" id="totalBill">
+        </div>
+        <div class="service">
+            <h4>How was Your service</h4>
+            <select id="serviceQual">
+                <option id="default" disabled selected value="0">-- Choose an Option --</option>
+                <option value="0.3">30&#37; &#45; Outstanding</option>
+                <option value="0.2">20&#37; &#45; Good</option>
+                <option value="0.15">15&#37; &#45; It was OK</option>
+                <option value="0.1">10&#37; &#45; Bad</option>
+                <option value="0.05">5&#37; &#45; Terrible</option>
+            </select>
+        </div>
+        <div class="noOfPeople">
+            <h4>How many people are sharing the bill?</h4>
+            <input type="number" id="peopls"><span>people</span>
+        </div>
+        <div class="calculate">
+            <button id="calBtn" class="btn draw-border">Calculate</button>
+            <span id="alert"></span>
+        </div>
+        <div class="result">
+            <h2>Tip Amount</h2>
+            <span id="tip"></span><br>
+            <div class="each">
+                <small id="each">each</small>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
